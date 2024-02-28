@@ -1,0 +1,43 @@
+NEWS SUMMARIZER USING OpenAI's GPT-3.5 MODEL
+
+This Python script fetches top headlines from the News API and summarizes each article's content using OpenAI's GPT-3.5 model. It leverages both the News API and OpenAI API to retrieve news data and generate summaries, respectively.
+
+PREREQUISITES
+
+Before running the script, ensure you have the following:
+
+1.News API Key: Obtain an API key from News API to access their news data.
+2.OpenAI API Key: Acquire an API key from OpenAI to use their GPT-3.5 model for text generation.
+3.Python and Libraries: Make sure you have Python installed on your system along with the necessary libraries (requests).
+
+USAGE
+
+ENVIRONMENT VARIABLE SET UP: Set the following environment variables:
+
+1.newsapi: News API key
+2.openaikey: OpenAI API key
+3.Running the Script: Execute the Python script.
+
+bash
+Copy code
+python main.py
+
+
+1.Output: The script fetches top headlines from the News API for the US and generates summaries using GPT-3.5 for each article. It prints the title of each article along with its summary.
+
+
+SCRIPT OVERVIEW
+
+1.Fetch News Data: The script makes a request to the News API to get top headlines for the US.
+2.Summarization: For each article, it checks if the content is available. If content exists, it generates a summary using GPT-3.5. If content is missing or empty, it skips the article.
+3.Printing Results: The script prints the title of each article along with its summary.
+
+NOTE
+
+Ensure that you have sufficient API rate limits for both News API and OpenAI to avoid any issues during execution.
+This script provides a basic implementation and can be extended further based on specific requirements and use cases.
+Feel free to reach out if you have any questions or suggestions!
+
+
+
+
